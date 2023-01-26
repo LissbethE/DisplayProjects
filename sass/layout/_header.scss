@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__info {
+    margin-top: auto;
+  }
+  &__p {
+    @include respond(phone) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  &__text {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+}

@@ -1,0 +1,223 @@
+.navigation {
+  position: relative;
+  overflow: hidden;
+
+  &__buttton {
+    width: 5rem; // 6trm
+    height: 5rem; // 6trm
+    border-radius: 50%;
+    position: fixed;
+    top: 5.5rem; // 6
+    right: 6rem; // 6
+
+    z-index: 2000;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    @include respond(bp-800) {
+      top: 3rem;
+      right: 3rem;
+    }
+
+    &:hover,
+    &:active {
+      box-shadow: 0 1rem 3rem rgba($color-black, 0.3);
+      transform: scale(1.2);
+      background-image: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.2)
+      );
+    }
+  }
+
+  &__background {
+    width: 4rem; // 5
+    height: 4rem; // 5
+    border-radius: 50%;
+    position: fixed;
+    top: 5.5rem; // 6.5
+    right: 6.5rem; // 6.5
+    z-index: 1000;
+    cursor: pointer;
+
+    @include gradient-animation;
+    transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+    transform: scale(0);
+
+    @include respond(bp-800) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    margin-top: 2.4rem; // 2.8
+    margin-left: 1.3rem; // 1.8
+
+    @include respond(bp-800) {
+      margin-top: 23px;
+      margin-left: 12px;
+    }
+
+    @include respond(phone) {
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+
+    @include respond(smallPhone) {
+      margin-top: 18px;
+      margin-left: 8px;
+    }
+
+    &,
+    &::before,
+    &::after {
+      width: 2.5rem;
+      height: 0.2rem;
+      background-image: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      );
+      display: inline-block;
+      transition: all 0.2s;
+
+      @include respond(bp-800) {
+        height: 0.1rem;
+      }
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -0.8rem;
+
+      @include respond(phone) {
+        top: -0.7rem;
+      }
+    }
+
+    &::after {
+      top: 0.8rem;
+
+      @include respond(smallPhone) {
+        top: 0.7rem;
+      }
+    }
+  }
+
+  &__buttton:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__buttton:hover &__icon::after {
+    top: 1rem;
+  }
+
+  ///////////////////////////////
+
+  &__nav {
+    width: 0;
+    height: 100vh;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 1500;
+    padding: 1rem 5rem;
+
+    transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+
+  &__list {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__item {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      border: none;
+      background: transparent;
+      display: block;
+      font-size: 3rem;
+      letter-spacing: 0.2rem;
+      font-weight: 700;
+      padding: 0.8rem 1.5rem;
+
+      color: $color-white;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-white 50%
+      );
+      background-size: 250%;
+      transition: all 0.4s ease-in;
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-primary;
+      transform: translateX(1rem);
+    }
+  }
+
+  &__link span {
+    margin-right: 2rem;
+  }
+
+  ///////////////////////////////
+
+  //* F U N C T I O N A L I T Y
+
+  &__background.activeNav {
+    transform: scale(80);
+  }
+
+  &__background.activeNav ~ &__nav {
+    width: 100%;
+    display: block;
+    opacity: 1;
+    left: 0;
+  }
+
+  // Formando la X en el boton
+
+  &__background.activeNav ~ &__buttton &__icon {
+    background-image: none;
+  }
+
+  %visible {
+    top: 0;
+    opacity: 1;
+  }
+  &__background.activeNav ~ &__buttton &__icon::before {
+    transform: rotate(135deg);
+    @extend %visible;
+  }
+
+  &__background.activeNav ~ &__buttton &__icon::after {
+    transform: rotate(-135deg);
+    @extend %visible;
+  }
+}

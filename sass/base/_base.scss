@@ -1,0 +1,53 @@
+html {
+  font-size: 62.5%;
+
+  ///////////////////////////////////
+  // if width <= 900px
+  @include respond(tab-portrait) {
+    font-size: 56.25%; // 9px
+  }
+
+  // width <= 600
+  @include respond(phone) {
+    font-size: 50%; // 8px
+  }
+
+  // if width <= 400px
+  @include respond(smallPhone) {
+    font-size: 43.75%; // 7px
+  }
+
+  // width >= 1800px
+  @include respond(big-desktop) {
+    font-size: 100%; // 16px
+  }
+
+  ///////////////////////////////////
+  /* Scroll Smoothly */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 3rem;
+
+  @include respond(bp-800) {
+    padding: 0rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}

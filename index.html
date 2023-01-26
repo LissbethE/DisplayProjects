@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="script.js"></script>
+
+    <title>✨All of my projects</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="navigation__background">&nbsp;</div>
+
+      <label for="navi-toggle" class="navigation__buttton">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <!-- 01 -->
+          <li class="navigation__item">
+            <a href="#home" class="navigation__link" data-tab="1">
+              <span>01</span>Home
+            </a>
+          </li>
+
+          <!-- 02 -->
+          <li class="navigation__item">
+            <a href="#projects" class="navigation__link" data-tab="2">
+              <span>02</span>Projects
+            </a>
+          </li>
+
+          <!-- 02 -->
+          <li class="navigation__item">
+            <a href="#findMe" class="navigation__link" data-tab="3">
+              <span>03</span>Find me
+            </a>
+          </li>
+        </ul>
+
+        <ul class="social social--nav">
+          <li class="social__item">
+            <a
+              href="mailto:lissbethescobar09@gmail.com"
+              target="_blank"
+              class="social__link"
+            >
+              <svg class="social__icon">
+                <use xlink:href="Img/sprite.svg#icon-mail"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a
+              href="https://github.com/LissbethE"
+              class="social__link"
+              target="_blank"
+            >
+              <svg class="social__icon">
+                <use xlink:href="Img/sprite.svg#icon-github"></use></svg
+            ></a>
+          </li>
+
+          <li class="social__item">
+            <a
+              href="https://www.linkedin.com/in/lissbethe/"
+              class="social__link"
+              target="_blank"
+            >
+              <svg class="social__icon">
+                <use xlink:href="Img/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header id="home" class="header header--1 content content--1">
+      <div class="repository__info header__info"></div>
+
+      <div class="repository__txt u-margin-bottom-small"></div>
+
+      <p class="paragraph header__text">
+        I am a web developer, I am passionate about web design and development.
+        I started in the IT world doing courses, I have developed several
+        projects, using Html, CSS, Sass, & Javascript, and my goal is to grow
+        professionally as a full-stack developer and graphic designer. I love
+        learning new things, and I am a creative and self-taught person.
+      </p>
+
+      <ul class="social social--header">
+        <li class="social__item">
+          <a
+            href="mailto:lissbethescobar09@gmail.com"
+            class="social__link"
+            target="_blank"
+          >
+            <svg class="social__icon">
+              <use xlink:href="Img/sprite.svg#icon-mail"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a
+            href="https://github.com/LissbethE"
+            class="social__link"
+            target="_blank"
+          >
+            <svg class="social__icon">
+              <use xlink:href="Img/sprite.svg#icon-github"></use></svg
+          ></a>
+        </li>
+
+        <li class="social__item">
+          <a
+            href="https://www.linkedin.com/in/lissbethe/"
+            class="social__link"
+            target="_blank"
+          >
+            <svg class="social__icon">
+              <use xlink:href="Img/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <section id="projects" class="section-projects content content--2 hidden">
+      <h2 class="heading-2">All of my projects</h2>
+      <p class="paragraph u-margin-bottom-medium">
+        Some of my projects are based on YouTube and on some courses that I have
+        taken
+      </p>
+
+      <!-- btn -->
+      <div
+        id="repository__tab-container"
+        class="repository__tab-container u-margin-bottom-small"
+      >
+        <button class="repository__tab-btn" data-tab="1">Projects</button>
+        <button class="repository__tab-btn" data-tab="2">Website</button>
+        <button class="repository__tab-btn" data-tab="3">Games</button>
+      </div>
+
+      <!-- search repo -->
+      <form action="#" class="search u-margin-bottom-medium">
+        <input
+          type="text"
+          class="search__input"
+          placeholder="Search Projects"
+        />
+
+        <button type="button" class="search__button">
+          <svg class="search__icon">
+            <use xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </button>
+      </form>
+
+      <!-- content / projects  -->
+
+      <div
+        class="repository__content repository__content-projects repository__content--1"
+      ></div>
+
+      <div
+        class="repository__content repository__content-website repository__content--2 hidden"
+      ></div>
+
+      <div
+        class="repository__content repository__content-game repository__content--3 hidden"
+      ></div>
+    </section>
+
+    <section id="findMe" class="section-findMe content content--3 hidden">
+      <h2 class="heading-2 u-margin-bottom-medium">Where to finde me</h2>
+
+      <div class="findMe__links-container">
+        <a
+          href="https://github.com/LissbethE"
+          class="findMe__link"
+          target="_blank"
+        >
+          <i class="devicon-github-original colored findMe__icon"></i>
+          <span class="findMe__span">Github</span>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/lissbethescobar/"
+          class="findMe__link"
+          target="_blank"
+        >
+          <i class="devicon-linkedin-plain colored findMe__icon"></i>
+          <span class="findMe__span"> Linkedin</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="bg-video">
+      <video class="bg-video__content" autoplay muted loop>
+        <source type="video/mp4" alt="video" src="./video/Lava.mp4" />
+        Your browser isn't supported! 🙁
+      </video>
+    </div>
+  </body>
+</html>
