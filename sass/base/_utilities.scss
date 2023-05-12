@@ -34,3 +34,25 @@
 .u-margin-top-huge {
   margin-top: 10rem !important;
 }
+
+///////////////////////////////////
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+  position: absolute;
+  top: 0;
+}
+
+.active {
+  display: grid !important;
+}
+
+$br-radius: 1rem;
+
+.border {
+  border-right: 1px solid $color-white;
+  padding-right: 1rem;
+}

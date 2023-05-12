@@ -16,26 +16,8 @@ $color-white: #f7f7f7;
 ///////////////////////////////////
 // FONT VARIABLES
 
-$font-SansSerif: 'Lato', sans-serif;
-$font-serif: 'Playfair Display', serif;
-$font-script: 'Euphoria Script', cursive;
+$font-openSans: 'Open Sans', sans-serif;
+$font-display: 'Euphoria Script', cursive;
 
 $font-size-default: 1.6rem;
 $letter-spacing-small: 0.2rem;
-
-///////////////////////////////////
-.visible {
-  display: block;
-}
-
-.hidden {
-  display: none !important;
-  position: absolute;
-  top: 0;
-}
-
-.active {
-  display: grid !important;
-}
-
-$br-radius: 1rem;

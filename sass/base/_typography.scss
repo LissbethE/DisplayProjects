@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Euphoria+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=swap');
 
 body {
-  font-family: $font-SansSerif;
+  font-family: $font-openSans;
   font-weight: 400;
   line-height: 1.6;
 
@@ -19,23 +19,22 @@ ul {
 
 %heading {
   font-weight: 400;
-  font-size: $font-serif;
 }
 
 .heading-1 {
   font-size: Max(7vw, 3rem);
   text-align: center;
   letter-spacing: 0.4rem;
-
-  font-family: $font-script;
+  font-family: $font-display;
 }
 
 .heading-2 {
   @extend %heading;
-  font-size: Max(4vw, 3rem);
+  font-size: Max(4vw, 4rem);
   letter-spacing: 0.2rem;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
 
   @include gradient-clip-text;
 }

@@ -56,58 +56,66 @@ const devicons = {
   Git: '<i class="devicon-git-plain colored" ></i>',
   Github: '<i class="devicon-github-plain colored"></i>',
   Chrome: '<i class="devicon-chrome-plain colored"></i>',
-  Assembly: '<i class="devicon-labview-plain colored"></i> Assembly',
-  'C#': '<i class="devicon-csharp-plain colored"></i> C#',
-  'C++': '<i class="devicon-cplusplus-plain colored"></i> C++',
-  C: '<i class="devicon-c-plain colored"></i> C',
-  Clojure: '<i class="devicon-clojure-plain colored"></i> C',
-  CoffeeScript:
-    '<i class="devicon-coffeescript-plain colored"></i> CoffeeScript',
-  Crystal: '<i class="devicon-crystal-plain colored"></i> Crystal',
-  CSS: '<i class="devicon-css3-plain colored"></i> CSS',
-  Dart: '<i class="devicon-dart-plain colored"></i> Dart',
   Dockerfile: '<i class="devicon-docker-plain colored"></i> Docker',
-  Elixir: '<i class="devicon-elixir-plain colored"></i> Elixir',
-  Elm: '<i class="devicon-elm-plain colored"></i> Elm',
-  Erlang: '<i class="devicon-erlang-plain colored"></i> Erlang',
-  'F#': '<i class="devicon-fsharp-plain colored"></i> F#',
-  Go: '<i class="devicon-go-plain colored"></i> Go',
-  Groovy: '<i class="devicon-groovy-plain colored"></i> Groovy',
-  HTML: '<i class="devicon-html5-plain colored"></i> HTML',
-  Haskell: '<i class="devicon-haskell-plain colored"></i> Haskell',
-  Java: '<i class="devicon-java-plain colored" colored></i> Java',
-  JavaScript: '<i class="devicon-javascript-plain colored"></i> JavaScript',
-  Julia: '<i class="devicon-julia-plain colored"></i> Julia',
-  'Jupyter Notebook': '<i class="devicon-jupyter-plain colored"></i> Jupyter',
-  Kotlin: '<i class="devicon-kotlin-plain colored" colored></i> Kotlin',
-  Latex: '<i class="devicon-latex-plain colored"></i> Latex',
-  Lua: '<i class="devicon-lua-plain-wordmark colored" colored></i> Lua',
-  Matlab: '<i class="devicon-matlab-plain colored"></i> Matlab',
-  Nim: '<i class="devicon-nixos-plain colored" colored></i> Nim',
-  Nix: '<i class="devicon-nixos-plain colored"></i> Nix',
-  ObjectiveC: '<i class="devicon-objectivec-plain colored"></i> ObjectiveC',
-  OCaml: '<i class="devicon-ocaml-plain colored"></i> OCaml',
-  Perl: '<i class="devicon-perl-plain colored"></i> Perl',
-  PHP: '<i class="devicon-php-plain colored"></i> PHP',
-  PLSQL: '<i class="devicon-sqlite-plain colored"></i> PLSQL',
-  Processing:
-    '<i class="devicon-processing-plain colored" colored></i> Processing',
-  Python: '<i class="devicon-python-plain colored" colored></i> Python',
-  R: '<i class="devicon-r-plain colored"></i> R',
-  Ruby: '<i class="devicon-ruby-plain colored"></i> Ruby',
-  Rust: '<i class="devicon-rust-plain colored" colored></i> Rust',
-  Sass: '<i class="devicon-sass-original colored"></i> Sass',
-  SCSS: '<i class="devicon-sass-original colored"></i> Sass',
-  Scala: '<i class="devicon-scala-plain colored"></i> Scala',
-  Shell: '<i class="devicon-bash-plain colored" colored></i> Shell',
-  Solidity: '<i class="devicon-solidity-plain colored"></i> Solidity',
-  Stylus: '<i class="devicon-stylus-plain colored"></i> Stylus',
-  Svelte: '<i class="devicon-svelte-plain colored"></i> Svelte',
-  Swift: '<i class="devicon-swift-plain colored"></i> Swift',
-  Terraform: '<i class="devicon-terraform-plain colored"></i> Terraform',
-  TypeScript: '<i class="devicon-typescript-plain colored"></i> TypeScript',
-  'Vim Script': '<i class="devicon-vim-plain colored"></i> Vim Script',
-  Vue: '<i class="devicon-vuejs-plain colored"></i> Vue',
+
+  HTML: 'https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white',
+
+  CSS: 'https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white',
+
+  Sass: 'https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white',
+
+  SCSS: 'https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white',
+
+  Tailwind:
+    'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white',
+
+  Bootstrap:
+    'https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white',
+
+  Go: 'https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white',
+
+  JavaScript:
+    'https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black',
+
+  TypeScript:
+    'https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white',
+
+  Python:
+    'https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white',
+
+  Java: 'https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white',
+
+  React_Native:
+    'https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB',
+
+  React:
+    'https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB',
+
+  Angular:
+    'https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white',
+
+  Vue: 'https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D',
+
+  Node: 'https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white',
+
+  Express: 'https://img.shields.io/badge/Express.js-404D59?style=for-the-badge',
+
+  MongoDB:
+    'https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white',
+
+  PostgreSQL:
+    'https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white',
+
+  MySQL:
+    'https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white',
+
+  SQLite:
+    '	https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white',
+
+  PHP: 'https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white',
+
+  Shell:
+    'https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white',
 };
 
 const getJSON = function (url, errorMsg = 'Something went wrong😕💥') {
@@ -121,7 +129,7 @@ const getJSON = function (url, errorMsg = 'Something went wrong😕💥') {
 const renderProfile = function (data) {
   const html = `
       <h1 class="heading-1">${data.name}</h1>
-      <p class="paragraph header__p u-center-text u-margin-bottom-small">${data.bio}</p>
+      <p class="paragraph header__p u-center-text">${data.bio}</p>
   `;
 
   const paragraphs = `
@@ -151,138 +159,66 @@ const renderProfile = function (data) {
     .insertAdjacentHTML('afterbegin', paragraphs);
 };
 
-const renderRepositories = function (data) {
+const renderRepositories = function (datos) {
   let html = ``;
   let games = ``;
+  let project = ``;
   let website = ``;
   const userHome = `https://github.com/${username}`;
   input.classList.remove('hidden');
 
-  for (const e of data) {
-    if (e.fork && hideForks) {
+  for (const data of datos) {
+    if (data.fork && hideForks) {
       continue;
     }
+    const langUrl = `${userHome}?tab=repositories&q=&language=${data.language}`;
+    const starsUrl = `${userHome}/${data.name}/stargazers`;
+    const page = `https://lissbethe.github.io/${data.name}/`;
 
-    const langUrl = `${userHome}?tab=repositories&q=&language=${e.language}`;
-    const starsUrl = `${userHome}/${e.name}/stargazers`;
-    const page = `https://lissbethe.github.io/${e.name}/`;
+    html = `
+    <div class="card">
+      <h3 class="card__title">${data.name}</h3>
+      <p class="card__paragraph ${data.description || 'hidden'}">
+        ${data.description}
+      </p>
+      
+      <div class="card__container-icons">
+        <a href="${starsUrl}"
+        class="card__start ${data.stargazers_count || 'hidden'}
+                           ${data.language && 'border'}
+                           ${data.forks_count && 'border'}">
+          <span>⭐</span>
+          <span>${data.stargazers_count}</span>
+        </a>
 
-    // Para los juegos
-    if (e.name.toLowerCase().indexOf('game') !== -1) {
-      games += `
-      <div class="card">
-        <h3 class="card__title">${e.name}</h3>
-        <p class="card__paragraph">${e.description ? e.description : ''}</p>
+        <a href="${starsUrl}" class="card__git ${data.forks_count || 'hidden'}
+                                    ${data.language && 'border'}">
+         <span>${devicons.Git}</span> 
+         <span>${data.forks_count}</span>
+        </a>
 
-        <div class="card__container-links">
-          <a href="${starsUrl}"
-          class="${e.stargazers_count > 0 ? 'visible' : 'hidden'}">
-            ⭐ ${e.stargazers_count}
-          </a>
-
-          <a href="${langUrl}" class="${e.language ? 'visible' : 'hidden'}">
-            ${devicons[e.language]}
-          </a>
-
-          <a href="${starsUrl}" 
-          class="${e.forks_count > 0 ? 'visible' : 'hidden'}">
-            ${devicons.Git} ${e.forks_count}
-          </a>
-        </div>
-
-        <div class="card__btn">
-          <a href="${e.html_url}" target="_blank">
-            ${e.homepage && e.homepage !== '' ? 'Code' : 'View Project'}
-            ${devicons.Github}
-          </a>
-
-          <a href="${page}" target="_blank"
-          class="${e.has_pages && e.has_pages !== '' ? 'visible' : 'hidden'}">
-            Live ${devicons.Chrome}
-          </a>
-        </div>
+        <img class="card__img ${data.language || 'hidden'}"
+        src="${devicons[data.language]}" />
       </div>
-    `;
-    }
-
-    // Para las paginas
-    else if (e.name.toLowerCase().indexOf('website') !== -1) {
-      website += `
-      <div class="card">
-        <h3 class="card__title">${e.name}</h3>
-        <p class="card__paragraph">${e.description ? e.description : ''}</p>
-
-        <div class="card__container-links">
-          <a href="${starsUrl}"
-          class="${e.stargazers_count > 0 ? 'visible' : 'hidden'}">
-            ⭐ ${e.stargazers_count}
-          </a>
-
-          <a href="${langUrl}" class="${e.language ? 'visible' : 'hidden'}">
-            ${devicons[e.language]}
-          </a>
-
-          <a href="${starsUrl}" 
-          class="${e.forks_count > 0 ? 'visible' : 'hidden'}">
-            ${devicons.Git} ${e.forks_count}
-          </a>
-        </div>
-
-        <div class="card__btn">
-          <a href="${e.html_url}" target="_blank">
-            ${e.homepage && e.homepage !== '' ? 'Code' : 'View Project'}
-            ${devicons.Github}
-          </a>
-
-          <a href="${page}" target="_blank"
-          class="${e.has_pages && e.has_pages !== '' ? 'visible' : 'hidden'}">
-            Live ${devicons.Chrome}
-          </a>
-        </div>
+      
+      <div class="card__btn">
+        <a href="${data.html_url}" target="_blank">
+           ${data.homepage !== '' ? 'Code' : 'View Project'}
+           ${devicons.Github}
+        </a>
+        
+        <a href="${page}" target="_blank" class="${data.has_pages || 'hidden'}">
+          Live ${devicons.Chrome}
+        </a>
       </div>
-    `;
-    }
+    </div>`;
 
-    // Para los otros proyectos
-    else {
-      html += `
-      <div class="card">
-          <h3 class="card__title">${e.name}</h3>
-          <p class="card__paragraph">${e.description ? e.description : ''}</p>
-
-        <div class="card__container-links">
-          <a href="${starsUrl}"
-          class="${e.stargazers_count > 0 ? 'visible' : 'hidden'}">
-            ⭐ ${e.stargazers_count}
-          </a>
-
-          <a href="${langUrl}" class="${e.language ? 'visible' : 'hidden'}">
-            ${devicons[e.language]}
-          </a>
-
-          <a href="${starsUrl}" 
-          class="${e.forks_count > 0 ? 'visible' : 'hidden'}">
-            ${devicons.Git} ${e.forks_count}
-          </a>
-        </div>
-
-        <div class="card__btn">
-          <a href="${e.html_url}" target="_blank">
-            ${e.homepage && e.homepage !== '' ? 'Code' : 'View Project'}
-            ${devicons.Github}
-          </a>
-
-          <a href="${page}" target="_blank"
-          class="${e.has_pages && e.has_pages !== '' ? 'visible' : 'hidden'}">
-            Live ${devicons.Chrome}
-          </a>
-        </div>
-      </div>
-    `;
-    }
+    if (data.name.toLowerCase().indexOf('game') !== -1) games += html;
+    else if (data.name.toLowerCase().indexOf('website') !== -1) website += html;
+    else project += html;
   }
 
-  contentProjects.insertAdjacentHTML('afterbegin', html);
+  contentProjects.insertAdjacentHTML('afterbegin', project);
   contentWebsite.insertAdjacentHTML('afterbegin', website);
   contentGame.insertAdjacentHTML('afterbegin', games);
 };
