@@ -18,7 +18,7 @@
 <div align="center">
   <img alt="Home" src="img/home.png" width="90%">
   </br>
-  <img alt="Projects" src="img/Projects.png" width="90%">
+  <img alt="Projects" src="img/projects.png" width="90%">
 </div>
 
 </br>
